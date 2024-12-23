@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #1e1e2f, #2e2e3f);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Container */
+  .app-container {
+    background: #25252d;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+  
+  header {
+    padding: 20px;
+    text-align: center;
+    background: #1e1e2f;
+    border-bottom: 2px solid #444;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    color: #e91e63;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .todo-input-section {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #task-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #2e2e3f;
+    color: #fff;
+    outline: none;
+  }
+  
+  #task-input::placeholder {
+    color: #888;
+  }
+  
+  #add-task-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #e91e63;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #add-task-btn:hover {
+    background: #d01750;
+  }
+  
+  .task-category {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .category-btn {
+    padding: 8px 15px;
+    background: #2e2e3f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .category-btn:hover,
+  .category-btn.active {
+    background: #e91e63;
+  }
+  
+  .task-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    background: #3a3a4f;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .task-item .timestamp {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  .task-item button {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #e91e63;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .task-item button:hover {
+    transform: scale(1.2);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e1e2f;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #e91e63;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
